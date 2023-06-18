@@ -1,74 +1,72 @@
 .profile {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-       margin-top: 70px;
-       box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 70px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.description{
-    border-radius: 10px 10px 0 0 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: #fff;
+.description {
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #fff;
 }
 
-.avatar{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.name{
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 15px;
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.tag{
-    color: #A0A0A0;
-    margin-bottom: 15px;
+.tag {
+  color: #a0a0a0;
+  margin-bottom: 15px;
 }
 
 .location {
-    color: #A0A0A0
+  color: #a0a0a0;
 }
 
-.stats{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:	#D8D8D8;
-justify-content: space-around;
-border-top: 1px dashed #C0C0C0; 
-border-radius: 0 0 10px 10px ;
-
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8d8d8;
+  justify-content: space-around;
+  border-top: 1px dashed #c0c0c0;
+  border-radius: 0 0 10px 10px;
 }
-.item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 }
-.item:not(:last-child){
-    border-right: 1px dashed #C0C0C0; 
+.item:not(:last-child) {
+  border-right: 1px dashed #c0c0c0;
 }
 
-.label{
-    color: #A0A0A0;
-    margin-bottom: 7px;
+.label {
+  color: #a0a0a0;
+  margin-bottom: 7px;
 }
 
-.quantity{
-    font-weight: 500;
+.quantity {
+  font-weight: 500;
 }
