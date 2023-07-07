@@ -1,6 +1,19 @@
 import PropTypes from 'prop-types';
 
-import profile from './Profile.module.css';
+// import profile from './Profile.module.css';
+
+import {
+  StyledProfile,
+  ProfileDescription,
+  ProfileAvatar,
+  ProfileName,
+  ProfileTag,
+  ProfileLocation,
+  ProfileItem,
+  ProfileLabel,
+  ProfileQuantity,
+  ProfileStats,
+} from './Profile.styled';
 
 export const Profile = ({
   username,
@@ -10,29 +23,29 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className={profile.profile}>
-      <div className={profile.description}>
-        <img src={avatar} alt="User avatar" className={profile.avatar} />
-        <p className={profile.name}>{username}</p>
-        <p className={profile.tag}>{tag}</p>
-        <p className={profile.location}>{location}</p>
-      </div>
+    <StyledProfile>
+      <ProfileDescription>
+        <ProfileAvatar src={avatar} alt="User avatar" />
+        <ProfileName>{username}</ProfileName>
+        <ProfileTag>{tag}</ProfileTag>
+        <ProfileLocation>{location}</ProfileLocation>
+      </ProfileDescription>
 
-      <ul className={profile.stats}>
-        <li className={profile.item}>
-          <span className={profile.label}>Followers</span>
-          <span className={profile.quantity}>{followers}</span>
-        </li>
-        <li className={profile.item}>
-          <span className={profile.label}>Views</span>
-          <span className={profile.quantity}>{views}</span>
-        </li>
-        <li className={profile.item}>
-          <span className={profile.label}>Likes</span>
-          <span className={profile.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <ProfileStats>
+        <ProfileItem>
+          <ProfileLabel>Followers</ProfileLabel>
+          <ProfileQuantity>{followers}</ProfileQuantity>
+        </ProfileItem>
+        <ProfileItem>
+          <ProfileLabel>Views</ProfileLabel>
+          <ProfileQuantity>{views}</ProfileQuantity>
+        </ProfileItem>
+        <ProfileItem>
+          <ProfileLabel>Likes</ProfileLabel>
+          <ProfileQuantity>{likes}</ProfileQuantity>
+        </ProfileItem>
+      </ProfileStats>
+    </StyledProfile>
   );
 };
 

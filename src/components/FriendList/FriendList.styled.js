@@ -1,4 +1,6 @@
-.list {
+import styled from 'styled-components';
+
+export const FriendsList = styled.ul`
   margin-top: 50px;
   width: 350px;
   margin-left: auto;
@@ -6,9 +8,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+`;
 
-.item {
+export const FriendsListItem = styled.li`
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -19,24 +21,24 @@
   border-radius: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
+`;
 
-.status {
+export const Avatar = styled.img`
+  margin-left: 10px;
+`;
+
+export const FriendsListName = styled.p`
+  margin-left: 10px;
+`;
+
+export const FriendsListIsOnline = styled.span`
   border-radius: 50px;
   width: 20px;
   height: 20px;
-  background-color: red;
-}
-
-.statusgreen {
-  composes: status;
-  background-color: green;
-}
-
-.avatar {
-  margin-left: 10px;
-}
-
-.name {
-  margin-left: 10px;
-}
+  background-color: ${props => {
+    if (props.isOnline) {
+      return 'green';
+    }
+    return 'red';
+  }};
+`;
